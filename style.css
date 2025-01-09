@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+body {
+  background-color: #1d1534;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container:hover {
+  animation: flip 0.6s forwards;
+}
+.container:not(:hover) {
+  animation: flip2 0.6s forwards;
+}
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes flip2 {
+    0% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+.debit-card {
+  position: absolute;
+  border: 2px solid #3c2a72;
+  background-color: #352f4a;
+  width: 650px;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  backface-visibility: hidden;
+}
+.top,.center,.btm {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.top,.btm {
+  align-items: center;
+}
+.top h1 {
+  font-size: 33px;
+  font-weight: 400;
+  font-family: monospace;
+}
+.center {
+  align-items: end;
+}
+.center img {
+  border-radius: 22px;
+  width: 70px;
+}
+.center h1 {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: monospace;
+}
+.btm h1 {
+  font-size: 33px;
+  font-weight: 400;
+  font-family: monospace;
+}
+.btm .size {
+  font-size: 21px;
+  font-family: "Poppins", serif;
+}
+.btm-right img {
+  width: 150px;
+}
+.btm-right p {
+  font-family: "Poppins", serif;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.back {
+  padding: 25px 0px 25px 0px;
+  gap: 0px;
+  transform: rotateY(180deg);
+}
+.service,.detail {
+  color: white;
+}
+.service p {
+  font-family: "Poppins", serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.bland {
+  height: 95px;
+  background-color: black;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0px 25px 0px 25px;
+}
+.dtl-top {
+  display: flex;
+  justify-content: space-between;
+}
+.dtl-top h4 {
+  font-weight: 500;
+  padding-right: 68px;
+}
+.dtl-center {
+  display: flex;
+  align-items: center;
+}
+.no-blend {
+  display: flex;
+}
+.no-blend img {
+  height: 75px;
+  width: 530px;
+  object-fit: cover;
+}
+.no {
+  height: 55px;
+  width: 55px;
+  background-color: white;
+  color: black;
+  font-style: italic;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.dtl-btm p {
+  font-size: 15px;
+  line-height: 20px;
+}
